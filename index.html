@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador de repositorios de Github</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="navbar">
+      <h1>Buscador de repositorios de Github</h1>
+    </header>
+
+    <main>
+      <div class="controls">
+        <select id="language">
+          <option value="">Seleccina el lenguaje de programación</option>
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+          <option value="c++">C++</option>
+          <option value="go">Go</option>
+          <option value="ruby">Ruby</option>
+        </select>
+        <button id="searchBtn">Buscar</button>
+      </div>
+
+      <div id="status" class="status-message">Por favor, selecciona un lenguaje de programación</div>
+
+      <div id="repoCard" class="repo-card hidden"></div>
+
+      <button id="refreshBtn" class="hidden">Refrescar</button>
+    </main>
+  </div>
+  <div class="theme-toggle">
+  <button id="toggle-theme">🌙 Tema Oscuro</button>
+</div>
+
+<footer>
+  Todos los derechos reservados, Jesús Manuel Páez
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
